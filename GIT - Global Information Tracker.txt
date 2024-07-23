@@ -1,0 +1,177 @@
+****************************************************************************************************************************                                  |                                       GIT - Global Information Tracker                                                   |
+****************************************************************************************************************************
+
+1) What is Git?
+* Git is used to track the files.
+* It will maintain multiple versions of the same file.
+* It is platform-independent.
+* It is free and open source.
+
+ Paytm -------------|---------------
+       |  Dev -1    |   Dev -2     |
+       |  Bus       |   Movies     |
+       |    UK      |   Us         |
+       -------------|---------------
+       |  Dev -3    |    Dev -4    |
+       |  Trains    |  Recharge    |
+       |  Eng       |    India     |
+       -------------|---------------
+
+2) Difference b/t git and GitHub
+
+Git - local files -- ex-Our laptops
+Git hub - remote repository -- to store project-related data in the servers.
+
+3) Difference b/t svn and git.
+SVN - Sub Versions
+--- Centralized version control system.(CVCS)
+--- Create multiple files and folders but we can share with few users or developers.
+Git -- Global Information Tracker
+-- Distributed version control system.(DVCS)
+
+ CVCS 
+      DEV ------------ APP ------------------- SERVER
+
+DVCS
+     DEV--------------APP ----------------------SERVER 1 
+                          ----------------------SERVER 2
+                          ----------------------SERVER 3
+
+4) GIT stages
+                 -------------------
+                 | Working directory|
+                 --------------------
+                 |
+                 v
+              git add
+                 |  -----------------
+                 |->|  Staging area |
+                    -----------------
+                                    |
+                                    v
+                                 git commands
+                                    |
+                      --------------|
+                      |repository  |<-
+                      --------------
+
+5) git alternatives
+   Git lab, SVN, Bit Bucket, P4, Stash, Helix
+
+6) By default, when creating a new branch from an existing one in a version control system like git. All files present in the original branch are carried over the new branch. this means that unless files are specifically, altered or removed in the previous branch, they will remain unchanged and visible in the new branch.
+
+7) git MERGE and git REBASE:-
+   both are used to copy "whole" files from one branch to another branch.
+   Major difference:- MERGE "will show" you the history of merged file names.
+   REBASE "will not show" you the history of merged file names.
+
+8) GIT revert:- To unmerge files in a branch.
+   :wq!
+    w---------save
+    q---------quit
+9) ********GIT MERGER CONFLICT------
+   Trying to copy files from one branch to another branch "WITH THE SAME FILE NAME' merge conflict will occur.
+
+   SOLUTION :------MANUALLY 
+
+10) git log ---- display the list of commits.
+    git log --oneline ----- display the commit title.
+
+11) git pull vs git fetch
+ 
+     --------------------------------------------------------------
+     | |-----                                                     |
+     |directory                                                   |
+     |                                                            |
+     |                                                            |
+     |                                                            |
+     |                                                            |
+
+12) Git cherry-pick ------- To copy "specific files" from the branches.
+13) Git stash:----- Hide the files temporarily.
+    Create the files and track the files but don't want to commit the files.
+14) create empty branch >>>>> commit >>>>>> push
+15) git alias:--- set:- git config --global alias.br "branch"
+    UNSET :- git config --global -- unset alias.br
+16) git clone - if you want to copy files from the remote repository to the local repository. 
+  git hub>>>>>>>git
+
+6) git commands
+    1  mkdir srmap
+    2  cd srmap
+    3  git init
+    4  touch index.html
+    5  ls
+    6  git status
+    7  git add index.html
+    8  git status
+    9  git commit -m "Frist commit -dev1" index.html
+   10  git config --global user.email "vishnu@gmail.com"
+   11  git config --global user.name "vishnu"
+   18  history
+   20  git commit -m "Frist commit -dev1" index.html
+   21  git branch
+   22  git branch CSE
+   23  git checkout CSE
+   26  touch python{1..5}
+   27  ls
+   28  git add python*
+   29  git commit -m "python commits" python*
+   30  git branch ECE
+   32  touch html{1..5}
+   33  ls
+   34  git add html*
+   35  git commit -m "html commits" html*
+   36  git branch mech
+   37  git checkout mech
+   38  touch javascript{1..5}
+   39  ls
+   40  git add javascript*
+   41  git commit -m "javasript commits" javascript*
+   42  touch css{1..2}
+   43  git add css*
+   44  git commit -m "css commits" css*
+   45  ls
+   46  history
+   47 git branch -m EEE
+   48 git remote add origin https://github.com/Saipreethamgrandhi/Gitpractice.git
+   49 git branch cse
+   50 git branch master
+   51 git merge cse
+   52 git rebase ECE
+   53 git revert CSE
+   54 esc button
+   55 :wq!
+   56 git revert ECE
+   57 esc button
+   58 wq!
+   59 git log
+   60 git log --oneline
+   61 git pull origin master
+   62 cat index.html
+   63 git fetch origin master
+   64 git cherry-pick
+   65 git cherry-pick 4779d53
+   66 ls
+   67 git stash
+   68 git stash apply
+   69 rm linux
+   70 git restore Linux
+   71 git branch -D one
+
+Devops
+1) abhishek veeramalla
+2) Tech world with nana ---devops
+3) power bi --Chandoo
+4) programming --brocode
+   
+
+
+   
+
+
+
+
+
+
+

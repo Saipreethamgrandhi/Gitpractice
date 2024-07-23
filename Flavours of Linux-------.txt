@@ -1,0 +1,97 @@
+Flavours of Linux-------
+
+1) UBUNTU -******
+2) RED HAT - *****
+3) KALI -CYBER SECURITY, HACKERS
+4) CENT OS
+5) PARROT
+6) AMAZON LINUX
+
+1,2,6 FOR CLOUD DEVELOPERS
+SUDO - Switch User Do
+
+Linux commands:
+1. Uname - Show info about the OS running into the servers.
+2. uname -a - Display info about the kernel, 
+3. hostname -I Display the information about the IP address.
+4. hostnamectl set-hostname SRMUni- gives Domains to the IP address.
+6. sudo -I - to revert.
+5. uptime - it displays the running time of servers, user information and memory consumption.
+7. whoami - list the user's information or list the users (Current user).
+8. who - total users list logged into the servers.
+9. touch - To create files. (ex: touch index.html). 
+10. LS - Short list.
+11. LL - Long List.
+12. Major diff - LS will display the list of the file names.
+13. LL - will show you extra info like rwx(read, write,execute) permissions, user info, date n time list of file names.
+14. cat - to give the data in a particular file. cat -n filename - it prints the serial numbers.
+15. cat>>filename - to insert the data.
+16. vim - edit data in the file.
+17. ./ - run specific files
+18. chmod 777 filename- change modifications
+19. clear - to clear the executed commands.
+20. head filename - it will filter out the top 10 lines of code.
+21. tail filename - it will filter out the last 10 lines of code.
+22. head -5 filename - it will filter out the top 5 lines of code.
+23. tail -5 filename - it will filter out the last 5 lines of code.
+24. SED - Stream EDITOR ( Which helps to sort or filter specific lines as per requirements).
+25. sed -n '3,12p' filename - 3 starting line, 12 ending line , p print.
+26. ls - to see all files.
+26. rm filename - to see specific files.
+
+
+
+
+EDITORS******
+1. Vim/vi ******
+2. Nano
+
+3 modes
+1) INSERT MODE - ESC + I
+2) SAVE MODE - SHIFT + :w
+3) EXIT MODE - SHIFT + :q
+
+:wq! w - save q - quit
+
+Permissions:-
+1. Read - R -4 - chmod 444 filename -for only read permissions.
+2. Write - W -2 - chmod 222 filename -for only write permissions.
+3. EXECUTE - X -1 - chmod 111 filename -for only execute permissions.
+4. chmod 666 filename - for read and write permissions.
+5. chmod 555 filename - for read and execute permissions.
+
+
+* chmod 777
+1. First number - USERS
+2. second number - GROUPS
+3. third number - Executable files
+
+GREP - GLOBAL REGULAR EXPRESSION PRINT
+which helps to filter specific words or data as per requirements.
+1. grep Linux html (o/p - Linux Linux)
+2. grep Linux html -I to sort it.
+3. wc(word count) html -  for the no of words. (o/p words characters other)
+
+Important networking tools for DevOps Engineer:******
+1. Ping:
+Purpose: To check the reachability of a host on an IP.
+network.
+2. Traceroute
+Purpose: To display the route and measure transit delays of packets across an IP network.
+ex: traceroute google.com
+3. Netstat:
+Purpose: To display active network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+ex: netsat -a
+4. Nmap:
+Purpose: To discover hosts and services on a cn, creating a "map" on a network.
+ex: map 'p 1-1000 target
+5. Ipconfig (windows) / ifconfig (Linux)
+Purpose: To display the configuration of network interfaces.
+ex: ifconfig
+6. Nslookup (Windows) / host (Linux)
+Purpose: To query DNS servers for domain information.
+
+Basic flow of git
+create>>>>>>>>>>>>>add>>>>>commit
+
+
